@@ -1,0 +1,33 @@
+{
+    "name": "flarum/auth-workfine",
+    "description": "Allow users to log in with Workfine.",
+    "type": "flarum-extension",
+    "keywords": ["authentication"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/caoxinyu92/auth-workfine/issues",
+        "source": "https://github.com/caoxinyu92/auth-workfine"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.13",
+        "league/oauth2-workfine": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flarum\\Auth\\Workfine\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Workfine Login",
+            "icon": {
+                "name": "fab fa-workfine",
+                "backgroundColor": "#eee",
+                "color": "#333"
+            }
+        }
+    }
+}
